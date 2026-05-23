@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Web Server</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container { text-align: center; padding: 40px; }
+    .whale { font-size: 80px; margin-bottom: 20px; animation: bounce 2s infinite; }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    h1 { font-size: 2.5rem; color: #00d4ff; margin-bottom: 10px; }
+    p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 8px; }
+    .badge {
+      display: inline-block;
+      background: #1e293b;
+      border: 1px solid #00d4ff40;
+      color: #00d4ff;
+      padding: 6px 20px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 20px;
+    }
+    .info {
+      margin-top: 30px;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .info-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+    .info-card span { color: #00d4ff; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="whale">🐳</div>
+    <h1>Hello from Docker!</h1>
+    <p>This web server is running inside a Docker container.</p>
+    <p>Powered by <strong>Nginx</strong> on port 80 inside the container.</p>
+    <div class="badge">✅ Task 4 — Docker Web Server</div>
+    <div class="info">
+      <div class="info-card">Server: <span>Nginx Alpine</span></div>
+      <div class="info-card">Container Port: <span>80</span></div>
+      <div class="info-card">Host Port: <span>8080</span></div>
+      <div class="info-card">Status: <span>Running ✅</span></div>
+    </div>
+  </div>
+</body>
+</html>
